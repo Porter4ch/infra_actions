@@ -11,5 +11,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+    - user: actions/checkout@2
+
     - name: Run a one-line script
-    - run: echo Hello, World!
+      run: echo Hello, World!
+
+    - name: Run a multi-line script
+      run: 
+           echo Add otehr actions to build,
+           echo test, and deploy your project.
